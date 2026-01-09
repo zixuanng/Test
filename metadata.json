@@ -1,0 +1,7 @@
+{
+  "name": "IgnisGuard - Forest Fire Prediction & Monitoring",
+  "description": "An AI-powered forest fire prediction system that utilizes Gemini's Search and Maps grounding to analyze environmental risks, track active wildfires, and provide early warning predictions based on real-time data.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
