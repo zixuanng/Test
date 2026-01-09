@@ -6,7 +6,7 @@ export const getFireRiskPrediction = async (
   lat?: number,
   lng?: number
 ): Promise<FireRiskData> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY });
 
   // 1. Gather environmental data via Search Grounding
   const searchResponse = await ai.models.generateContent({
@@ -78,7 +78,7 @@ export const getFireRiskPrediction = async (
 };
 
 export const getLatestWildfireNews = async (): Promise<GlobalNewsData> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: process.env.VITE_GEMINI_API_KEY });
   const response = await ai.models.generateContent({
     model: "gemini-3-flash-preview",
     contents:
