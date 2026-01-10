@@ -4,8 +4,6 @@ AI-Powered Forest Fire Prediction & Monitoring
 
 IgnisGuard is a TypeScript web application that provides real-time forest-fire prediction, monitoring, and situational awareness. It combines satellite data, meteorological feeds, and machine learning models to surface high-risk zones, generate risk scores, and give actionable recommendations to responders and operators.
 
-> NOTE: This README is tailored to the information you provided (web app, TypeScript, npm). If you want me to include framework-specific install/run instructions (e.g., Next.js, Vite, Create React App), tell me which framework you used and I will update the commands.
-
 Contents
 
 - [About](#about)
@@ -48,10 +46,10 @@ Supported platforms: modern desktop and mobile browsers. Built in TypeScript; ru
 Replace image paths with the actual files you committed to the repo (examples below use `assets/images/`).
 
 Dashboard (Global Overview)
-![IgnisGuard Dashboard](assets/images/dashboard.png)
+![IgnisGuard Dashboard](dashboard.png)
 
 Predictor (AI Risk Analysis)
-![IgnisGuard Predictor](assets/images/predictor.png)
+![IgnisGuard Predictor](predictor.png)
 
 If your images are named differently, update the paths above. You can also add GIFs to `assets/gifs/` for interactive demos.
 
