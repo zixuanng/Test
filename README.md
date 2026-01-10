@@ -51,8 +51,6 @@ Dashboard (Global Overview)
 Predictor (AI Risk Analysis)
 ![IgnisGuard Predictor](predictor.png)
 
-If your images are named differently, update the paths above. You can also add GIFs to `assets/gifs/` for interactive demos.
-
 ## Quickstart
 
 Prerequisites:
@@ -79,8 +77,6 @@ npm run build
 npm run preview
 ```
 
-If your project is using Next.js, Vite, or another framework, replace dev/build commands with framework-specific scripts (I can update this for you).
-
 ## Installation
 
 From source:
@@ -97,7 +93,7 @@ docker run --rm -p 3000:3000 -e NODE_ENV=production ignisguard/web
 ```
 
 Package manager:
-- Install globally (if you provide a packaged CLI or runner): `npm install -g ignisguard` (not applicable unless you publish)
+- Install globally: `npm install -g ignisguard` (not applicable unless you publish)
 
 ## Usage
 
@@ -165,11 +161,6 @@ Local development checklist:
 - Create a `.env.local` with required API keys and endpoints (see Configuration).
 - Run `npm install` and then `npm run dev`.
 - Use your browser to open the local dev server (default port shown in console).
-
-Architecture notes for contributors:
-- Keep UI components TypeScript-first; prefer functional components and hooks (if React).
-- Isolate model/ML calls behind an API layer—frontend should call stable endpoints for inference.
-- Keep providers (maps, telemetry) injectable to make testing and local dev easier.
 
 ## Testing
 
